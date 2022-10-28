@@ -3,7 +3,7 @@ import pathlib
 
 actual_path = pathlib.Path(__file__).parent.absolute()
 
-with open(str(actual_path) + './star_naves.csv', 'r') as file:
+with open('star_naves.csv', 'r') as file:
     reader3 = csv.DictReader(file, delimiter=';')
     naves_starwars = list(reader3)
 

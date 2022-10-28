@@ -4,14 +4,16 @@ from ejercicios import ej1, ej2, ej3, ej4, ej5
 def ejecutar():
     eleccion = int(input("Elige el ejercicio a ejecutar: "))
     if eleccion == 1:
-        a1=ej1.primera_aguja;a2=ej1.segunda_aguja,a3=ej1.tercera_aguja
+        a1=ej1.primera_aguja()
+        a2=ej1.segunda_aguja()
+        a3=ej1.tercera_aguja()
         ej1.pila_a_pila(a1,a2)
         ej1.pila_a_pila(a2,a3)
         print(a3.items)
     elif eleccion == 2:
         rec_it = int(input("¿Determinante recursivo(1) o iterativo(2)?: "))
         if rec_it == 1:
-            mat = ej2.construir_matriz_recursivo()
+            mat = ej2.construir_matriz_recursivo(0,0,[[],[],[]])
             print(mat); print(ej2.regla_de_sarrus(mat))
         elif rec_it == 2:
             mat = ej2.construir_matriz_iterativo()

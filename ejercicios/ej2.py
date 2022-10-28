@@ -16,11 +16,7 @@ def construir_matriz_recursivo(n, fila, matriz):
             numero = int(input("Introduce un elemento de la matriz(por filas): "))
             matriz[fila].append(numero)
             construir_matriz_recursivo(0, fila+1, matriz)
-    else:
-        return matriz
+    return matriz
 
 def regla_de_sarrus(matriz):
     return int((matriz[2][2]*matriz[1][1]*matriz[0][0])+(matriz[1][2]*matriz[0][1]*matriz[2][0])+(matriz[2][1]*matriz[1][0]*matriz[0][2])-(matriz[2][0]*matriz[1][1]*matriz[0][2])-(matriz[2][1]*matriz[1][2]*matriz[0][0])-(matriz[1][0]*matriz[0][1]*matriz[2][2]))
-
-a = construir_matriz_recursivo(0, 0, [[], [], []])
-print(a)
