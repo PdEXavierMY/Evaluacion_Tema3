@@ -29,3 +29,9 @@ def millenium_falcon():
         if row['Name'] == "Millennium Falcon":
             print(f"\n\nLa información del Millenium Falcon es {row}")
 
+def death_star():
+    for row in star_naves:
+        if row['Name'] == "Death Star":
+            print(f"\n\nLa información de la Death Star es {row}")
+
+
