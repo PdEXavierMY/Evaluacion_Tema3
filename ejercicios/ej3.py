@@ -39,3 +39,11 @@ def cinco_naves():
         naves.append(row['Name'] + " " + row['Passengers'])
     naves.sort() ; naves.reverse()
     print(f"\n\nLas cinco naves con mayor cantidad de pasajeros son {naves[:5]}")
+
+def mayor_tripulacion():
+    naves = []
+    for row in star_naves:
+        naves.append(row['Name'] + " " + row['Crew'])
+    naves.sort() ; naves.reverse()
+    print(f"\n\nLa nave que requiere mayor cantidad de tripulación es {naves[0]}")
+
