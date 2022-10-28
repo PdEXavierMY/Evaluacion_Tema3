@@ -54,4 +54,9 @@ def comienzan_at():
             at.append(row['Name'])
     print(f"\n\nLas naves que comienzan con AT son {at}")
 
-
+def seis_pasajeros():
+    pasajeros = []
+    for row in star_naves:
+        if int(row['Passengers']) >= 6:
+            pasajeros.append(row['Name'])
+    print(f"\n\nLas naves que pueden llevar seis o más pasajeros son {pasajeros}")
