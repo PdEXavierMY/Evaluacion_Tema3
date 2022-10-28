@@ -21,3 +21,30 @@ def ordenar_largo():
         naves_largo.append(row['Name'] + " " + row['Length'])
     naves_largo.sort() ; naves_largo.reverse()
     print(f"\n\nLas naves ordenadas por largo son {naves_largo}")
+
+
+def millenium_falcon():
+    for row in star_naves:
+        if row['Name'] == "Millennium Falcon":
+            print(f"\n\nLa información del Millenium Falcon es {row}")
+
+def death_star():
+    for row in star_naves:
+        if row['Name'] == "Death Star":
+            print(f"\n\nLa información de la Death Star es {row}")
+
+
+def cinco_naves():
+    naves = []
+    for row in star_naves:
+        naves.append(row['Name'] + " " + row['Passengers'])
+    naves.sort() ; naves.reverse()
+    print(f"\n\nLas cinco naves con mayor cantidad de pasajeros son {naves[:5]}")
+
+
+def mayor_tripulacion():
+    naves = []
+    for row in star_naves:
+        naves.append(row['Name'] + " " + row['Crew'])
+    naves.sort() ; naves.reverse()
+    print(f"\n\nLa nave que requiere mayor cantidad de tripulación es {naves[0]}")
