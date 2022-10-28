@@ -15,12 +15,20 @@ class Cola:
     def es_vacia(self):
         return self.items == []
 
-aguja1 = Cola()
-aguja2 = Cola()
-aguja3 = Cola()
-for i in range(74):
-    aguja1.encolar(i+1)
-print(aguja1.items)
-while aguja1.es_vacia() == False:
-    aguja2.encolar(aguja1.desencolar)
-print(aguja2.items)
+def primera_aguja():
+    aguja1 = Cola()
+    for i in range(74):
+        aguja1.encolar(i+1)
+    return aguja1
+
+def segunda_aguja():
+    aguja2 = Cola()
+    return aguja2
+
+def tercera_aguja():
+    aguja2 = Cola()
+    return aguja2
+
+def pila_a_pila(pila1, pila2):
+    while pila1.es_vacia() == False:
+        pila2.encolar(pila1.desencolar)
