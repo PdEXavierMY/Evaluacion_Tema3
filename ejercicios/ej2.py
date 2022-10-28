@@ -8,7 +8,7 @@ def construir_matriz_iterativo():
 
 def construir_matriz_recursivo(n=0, fila=0, matriz=[[], [], []]):
     if fila < 3:
-        if n < 3:
+        if n < 2:
             numero = int(input("Introduce un elemento de la matriz(por filas): "))
             matriz[fila].append(numero)
             construir_matriz_recursivo(n+1, fila, matriz)
