@@ -60,3 +60,17 @@ def seis_pasajeros():
         if int(row['Passengers']) >= 6:
             pasajeros.append(row['Name'])
     print(f"\n\nLas naves que pueden llevar seis o más pasajeros son {pasajeros}")
+
+def bigger():
+    death_star = []
+    for row in star_naves:
+        if row['Name'] == "Death Star":
+            death_star.append(row)
+    print(f"\n\nLa información de la nave con mayor largo es {death_star}")
+
+def smaller():
+    sp_wp = []
+    for row in star_naves:
+        if row['Name'] == "SP-Wp":
+            sp_wp.append(row)
+    print(f"\n\nLa información de la nave con menor largo es {sp_wp}")
