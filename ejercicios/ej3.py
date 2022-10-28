@@ -15,7 +15,6 @@ def ordenar_naves():
     naves.sort()
     print(f"\n\nLas naves ordenadas por nombre son {naves}")
 
-
 def ordenar_largo():
     naves_largo = []
     for fila in naves_starwars:
@@ -28,7 +27,7 @@ def millenium_falcon():
         if fila['Name'] == "Millennium Falcon":
             print(f"\n\nLa información del Halcón Milenario es {fila}")
 
-def death_star():
+def estrella_m():
     for fila in naves_starwars:
         if fila['Name'] == "Death Star":
             print(f"\n\nLa información de la Estrella de la Muerte es {fila}")
@@ -64,11 +63,11 @@ def seis_pasajeros():
     print(f"\n\nLas naves que pueden llevar seis o más pasajeros son {pasajeros}")
 
 def bigger():
-    death_star = []
+    estrella_m = []
     for fila in naves_starwars:
         if fila['Name'] == "Death Star":
-            death_star.append(fila)
-    print(f"\n\nLa información de la nave con mayor largo es {death_star}")
+            estrella_m.append(fila)
+    print(f"\n\nLa información de la nave con mayor largo es {estrella_m}")
 
 def smaller():
     sp_wp = []

@@ -17,9 +17,19 @@ def ejecutar():
             mat = ej2.construir_matriz_iterativo()
             print(mat); print(ej2.regla_de_sarrus(mat))
     elif eleccion == 3:
-        ej3.ejecutar()
+        ej3.ordenar_naves()
+        ej3.ordenar_largo()
+        ej3.millenium_falcon()
+        ej3.estrella_m()
+        ej3.cinco_naves()
+        ej3.mayor_tripulacion()
+        ej3.comienzan_at()
+        ej3.seis_pasajeros()
+        ej3.bigger()
+        ej3.smaller()
+
     elif eleccion == 4:
-        ej4.ejecutar()
+        pass
     elif eleccion == 5:
         mensaje = input('Ingrese el mensaje a encriptar: ')
         encriptacion = ej5.Encripta(mensaje)
