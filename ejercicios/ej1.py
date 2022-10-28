@@ -1,3 +1,6 @@
+from re import A
+
+
 class Cola:
 
     def __init__(self):
@@ -31,4 +34,4 @@ def tercera_aguja():
 
 def pila_a_pila(pila1, pila2):
     while pila1.es_vacia() == False:
-        pila2.encolar(pila1.desencolar)
+        pila2.encolar(pila1.desencolar())

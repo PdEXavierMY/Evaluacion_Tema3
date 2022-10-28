@@ -7,9 +7,15 @@ def ejecutar():
         a1=ej1.primera_aguja()
         a2=ej1.segunda_aguja()
         a3=ej1.tercera_aguja()
+        print("La primera aguja es: ", a1.items)
+        print("La segunda aguja es: ", a2.items)
+        print("La tercera aguja es: ", a3.items)
         ej1.pila_a_pila(a1,a2)
+        print("La primera aguja es: ", a1.items)
+        print("La segunda aguja es: ", a2.items)
         ej1.pila_a_pila(a2,a3)
-        print(a3.items)
+        print("La segunda aguja es: ", a2.items)
+        print("La tercera aguja es: ", a3.items)
     elif eleccion == 2:
         rec_it = int(input("¿Determinante recursivo(1) o iterativo(2)?: "))
         if rec_it == 1:
